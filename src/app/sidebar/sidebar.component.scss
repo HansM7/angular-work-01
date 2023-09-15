@@ -1,0 +1,31 @@
+.sidebar__items{
+
+    a{
+        color:hsl(210,10.81%,14.51%);
+    }
+    
+
+}
+
+.sidebar__items>ul>li{
+    margin-bottom: 2rem;
+}
+
+.sidebar__items>ul>li>a{
+    
+    font-weight: bold;
+    
+}
+
+
+.item{
+    li{
+        margin-top: 1rem;
+    }
+}
+
+.sidebar{
+    padding-top: 2rem;
+    border-right: 1px solid gray; 
+    height: 100%;
+}

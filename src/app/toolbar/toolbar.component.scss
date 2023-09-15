@@ -1,0 +1,20 @@
+.navbar-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+    
+}
+
+.ml-nav{
+    margin-left: 2rem;
+}
+.icon-toggle{
+    display: none;
+}

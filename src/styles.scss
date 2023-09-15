@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import 'bootstrap/scss/bootstrap';
+
+*a{
+    text-decoration: none;
+}
+*li{
+    list-style: none;
+}
+
+
+@media (max-width:768px) {
+    
+    .icon-toggle{
+        display: block!important;
+    }
+
+}
