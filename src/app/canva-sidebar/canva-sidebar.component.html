@@ -1,1 +1,64 @@
-<p>canva-sidebar works!</p>
+<div class="sidebar__items ">
+    <ul>
+        <li class="item"> 
+            <a href="">Inicio</a> 
+        </li>
+
+        <li 
+        class="item"
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample" 
+        href="#"
+        > 
+        <a href="#">Usuarios</a>
+            
+            <div class="item__collapse" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                <ul>
+                    <li>
+                        <a href="">Lista de usuarios</a>
+                    </li>
+                    <li>
+                        <a href="">Registrar usuario</a>
+                    </li>
+                    <li>
+                        <a href="">Usuarios suspendidos</a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+        
+        <li 
+            class="item"
+            (click)="collapse2.toggle()"
+            [attr.aria-expanded]="!isCollapsed2"
+            aria-controls="collapseExample" 
+            href="#"
+        > 
+            <a href="#">
+                Verhículos
+            </a> 
+            <div class="item__collapse" #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+                <ul>
+                    <li>
+                        <a href="">Lista de vehiculos</a>
+                    </li>
+                    <li>
+                        <a href="">Registrar vehiculo</a>
+                    </li>
+                    <li>
+                        <a href="">Vehiculos suspendidos</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li> 
+            <a href="">Option 1</a>
+         </li>
+        <li> 
+            <a href="">Option 1</a> 
+        </li>
+    </ul>
+</div>

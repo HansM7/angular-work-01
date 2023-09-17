@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedStateService } from '../shared-state.service';
 
 @Component({
   selector: 'app-content',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
+
+  constructor(
+    public sharedStateService:SharedStateService
+  ){}
 
 }

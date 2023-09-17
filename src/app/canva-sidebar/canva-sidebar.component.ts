@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./canva-sidebar.component.scss']
 })
 export class CanvaSidebarComponent {
-
+  public isCollapsed = true; 
+  public isCollapsed2 = true;
 }

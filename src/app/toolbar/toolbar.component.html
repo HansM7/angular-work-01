@@ -4,13 +4,16 @@
             <ul>
                 <li>
                     <a class="text-white fw-bold" href="">
-                        TURISMO EL RAPIDITO
+                        TURISMO EL RAPIDITO 
                     </a>
                 </li>
                 
             </ul>
-            <div class="icon-toggle">
-                <button>click</button>
+            <div class="icon-toggle mr-2">
+                <button class="btn btn-sm btn-outline-secondary" (click)="toggleService()">
+
+                    {{ sharedStateService.sidebarOpen$ ? 'Close' : 'Open' }}
+                </button>                  
             </div>
         </div>
       </nav>
